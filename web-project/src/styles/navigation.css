@@ -1,0 +1,97 @@
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center-align text */
+    padding: 2rem;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.8rem 2rem; /* Adjusted padding for a cleaner look */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav items */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* Adjusted size for a cleaner fit */
+    height: auto;
+    margin-right: 0.5rem; /* Space between logo image and text */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 1rem; /* Reduced margin for better spacing */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem; /* Slightly smaller font size for a cleaner look */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #ff9800;
+}
+
+main {
+    padding-top: 5rem; /* To avoid content being hidden under the fixed navbar */
+}
+
+section {
+    height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(to bottom, #ff9800, #ff5722);
+    color: white;
+}
+
+#about {
+    background: linear-gradient(to bottom, #4caf50, #8bc34a);
+    color: white;
+}
+
+#services {
+    background: linear-gradient(to bottom, #2196f3, #03a9f4);
+    color: white;
+}
+
+#contact {
+    background: linear-gradient(to bottom, #9c27b0, #673ab7);
+    color: white;
+}
